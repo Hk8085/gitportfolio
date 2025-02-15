@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #4a90e2, #0779e4);
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+    animation: gradientShift 5s infinite alternate;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.2em;
+    animation: fadeIn 3s ease-in;
+}
+
+/* Section Styles */
+section {
+    padding: 20px 0;
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+section h2 {
+    text-align: center;
+    color: #4a90e2;
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in;
+}
+
+section p, section ul {
+    font-size: 1.1em;
+    line-height: 1.8;
+    animation: fadeIn 3s ease-in;
+}
+
+section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Project and Experience Item Styles */
+.project-item, .experience-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 5px solid #4a90e2;
+    animation: fadeIn 2s ease-in;
+}
+
+.project-item h3, .experience-item h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #333, #000);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    animation: fadeIn 3s ease-in;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes gradientShift {
+    0% {
+        background: linear-gradient(135deg, #4a90e2, #0779e4);
+    }
+    50% {
+        background: linear-gradient(135deg, #e44d26, #f16529);
+    }
+    100% {
+        background: linear-gradient(135deg, #4a90e2, #0779e4);
+    }
+}
+
+/* Back to Top Button */
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #4a90e2;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+    background-color: #0779e4;
+}
